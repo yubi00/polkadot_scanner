@@ -1,0 +1,25 @@
+{
+  "name": "polkadot-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@polkadot/api": "^4.4.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yubi00/polkadot_scanner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yubi00/polkadot_scanner/issues"
+  },
+  "homepage": "https://github.com/yubi00/polkadot_scanner#readme"
+}
