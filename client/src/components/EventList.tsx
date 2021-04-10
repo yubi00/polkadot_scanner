@@ -1,16 +1,16 @@
-import React from "react";
 import { useQuery } from "react-query";
 import { fetchEvents } from "../utils/events";
+import { Event } from "./Event";
 
 interface Props {}
 
 export const EventList = (props: Props) => {
   const { data, isLoading } = useQuery("events", fetchEvents);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading || data?.length === 0) return <div>Loading...</div>;
   return (
     <div>
-      <h2>Event List</h2>
+      {data && data?.map((event, i) => <Event key={i} event={event} />)}
     </div>
   );
 };
